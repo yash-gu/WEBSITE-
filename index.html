@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Management India</h1>
+        <nav>
+            <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Cultural Fest 2024</h3>
+            <p>Date: 15th November 2024</p>
+            <p>Location: New Delhi</p>
+            <p>Description: Join us for a vibrant cultural festival showcasing art, music, and dance from across India.</p>
+        </div>
+        <div class="event">
+            <h3>Tech Conference 2024</h3>
+            <p>Date: 20th December 2024</p>
+            <p>Location: Bangalore</p>
+            <p>Description: A gathering of the brightest minds in technology to discuss innovations and future trends.</p>
+        </div>
+    </section>
+
+    <section id="register">
+        <h2>Register for an Event</h2>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="event">Select Event:</label>
+            <select id="event" required>
+                <option value="cultural_fest">Cultural Fest 2024</option>
+                <option value="tech_conference">Tech Conference 2024</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+        <div id="confirmation-message" class="hidden"></div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@eventmanagementindia.com</p>
+        <p>Phone: +91-123-456-7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
